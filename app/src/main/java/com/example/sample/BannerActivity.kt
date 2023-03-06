@@ -15,10 +15,6 @@ class BannerActivity : AppCompatActivity() {
 
         _binding = ActivityBannerBinding.inflate(layoutInflater)
 
-        binding.finishButton.setOnClickListener {
-            finish()
-        }
-
         setContentView(binding.root)
         binding.adView.loadAd(AdManagerAdRequest.Builder().build())
     }
